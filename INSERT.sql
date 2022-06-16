@@ -68,6 +68,11 @@ insert into album (album_name, album_year_of_issue, artist_name)
 values 
 	('Hexed', 2018, 'Children of Bodom')
 	
+insert into album (album_name, album_year_of_issue, artist_name)
+values
+	('Whoosh', 2020, 'Deep Purple'),
+	('S&M2', 2020, 'Metallica');
+	
 insert into artist_album (artist_id, album_id)
 values 
 (1,1),
@@ -90,6 +95,11 @@ values
 (10,18),
 (11,19),
 (11,20);
+
+insert into artist_album (artist_id, album_id)
+values 
+	(1,23),
+	(7,22);
 
 insert into artist_album (artist_id, album_id)
 values 
@@ -126,6 +136,13 @@ values
 	(20,'Раб страха',4.40),
 	(21, 'This road',4.33),
 	(3,'In my darkest hour', 4.55);
+
+insert into tracks (album_id, track_name, track_duration)
+values
+	(22,'Step by Step', 3.34),
+	(22, 'Man Alive', 5.35),
+	(23, 'Wherever I May Roam',4.45),
+	(23, 'For whom the bell tolls', 4.37);
 
 	
 insert into compilation (compilation_name, release_year)
