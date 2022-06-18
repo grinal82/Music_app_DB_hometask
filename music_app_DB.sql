@@ -21,6 +21,9 @@ create table if not exists Album (
 	artist_name varchar(40)
 );
 
+alter table album
+drop column artist_name;
+
 create table if not exists Artist_Album (
 	artist_id integer references Artist(id),
 	album_id integer references Album(id),
@@ -44,11 +47,4 @@ create table if not exists Compilation_Track (
 	compilation_id integer references Compilation(id),
 	track_id integer references Tracks(id),
 	constraint pr_k primary key (compilation_id, track_id)
-);
-
-
-create table if not exists Compilation_Track(
-compilation_id integer references Compilation(id),
-track_id integer references Tracks(id),
-constraints pk primary key (compilation_id, track_id)
 );
