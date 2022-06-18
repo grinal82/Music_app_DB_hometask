@@ -40,6 +40,9 @@ values
 	(10,6),
 	(11,3),
 	(11,7);
+insert into artist_genre(artist_id, genre_id)
+values
+	(9,5);
 	
 insert into album (album_name, album_year_of_issue, artist_name)
 values 
@@ -72,6 +75,7 @@ insert into album (album_name, album_year_of_issue, artist_name)
 values
 	('Whoosh', 2020, 'Deep Purple'),
 	('S&M2', 2020, 'Metallica');
+
 	
 insert into artist_album (artist_id, album_id)
 values 
